@@ -30,7 +30,9 @@ img{
 .header{
     width: 45vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .eyedropperButton{
