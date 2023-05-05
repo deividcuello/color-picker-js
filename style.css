@@ -32,7 +32,8 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    column-gap: 5rem;
+    row-gap: 0.5rem;
 }
 
 .eyedropperButton{
@@ -58,6 +59,28 @@ input[type='file']::file-selector-button{
     cursor: pointer;
 }
 
+form{
+    display: flex;
+    width: 45vw;
+    column-gap: 1rem;
+}
+
+input[type='text']{
+    flex: 1;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(181, 181, 181);
+    border-radius: 0.5rem;
+}
+
+input[type='submit']{
+    font-weight: bolder;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
 span{
     display: none;
     width: 2rem;
@@ -69,7 +92,7 @@ span{
 }
 
 .img{
-    max-width: 40vw;
+    max-width: 35vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -86,8 +109,12 @@ span{
     border-radius: 0.5rem;
 }
 
+h2.error{
+    color: rgb(255, 0, 0);
+}
+
 footer{
     position: absolute;
     bottom: 0.5rem;
-    
+    padding-top: 1rem;
 }
